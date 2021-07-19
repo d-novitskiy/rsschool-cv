@@ -19,3 +19,54 @@ Graduated from class with in- depth study of English Language
 * **2010-2014**  
 *Belarussian state university of transport*, Gomel.  
 Bachelor’s degree in accounting, analysis and audit.
+
+* **2018-2019**  
+*Brainstorm English*, Minsk.
+Completed the ***Intermediate level English course***
+
+* **2019-2020**  
+*TeachMeSkills*, Minsk.  
+Completed the course ***Front end developer***.
+
+## Work experience  
+
+* **Sep.2014-May 2016**  
+*Locomotive depot Volkovysk Baranovichi Division of the Belarusian Railway*, Volkovysk.  
+Accountant
+* **Dec.2016-Feb.2019**  
+*Unitary enterprise A1*, Minsk.  
+Accountant
+* **Feb.2019-Jun.2020**  
+*Unitary enterprise A1*, Minsk  
+Group manager (Inventories Accounting Group)
+* **Jun.2020-present**  
+*Unitary enterprise A1*, Minsk  
+Group manager (Group of property and indirect taxes)
+
+## Skills  
+
+1. Key skills
+    * HTML
+    * CSS
+    * JavaScript
+    * Git/Version control
+1. Frameworks and libraries
+    * Bootstrap 4
+    * jQuery
+    * React
+    * Redux
+1. CSS Preprocessors
+    * Less
+    * Sass
+1. English - B1
+
+## Projects
+
+1. [netflixroulette](https://d-novitskiy.github.io/movies/)  
+**Source code:** https://github.com/d-novitskiy/netflixroulette  
+**Description:** Made with React, React-Redux Movies app where you can search for a movie, and read its description.  
+**Features:** 2 types of searching (by title and by genres), pagination, sorting, routing
+2. [Dobrodedovo](https://d-novitskiy.github.io/dobrodedovo/)  
+**Source code:** https://github.com/d-novitskiy/dobrodedovo  
+**Description:** Made with Bootstrap 4 Landing page for the product store Dobrodedovo in Stepyanka Minsk where you can find information about product range, read about department of good deeds and find contact information. (In development).  
+**Features:** Responsive design, thumbnail images
