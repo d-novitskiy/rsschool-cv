@@ -1,0 +1,74 @@
+/*==========NORMALIZE==========*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+a:visited, a:focus, a:hover{
+	color: #121212;
+}
+li{
+	list-style: none;
+}
+
+/*==========COMMON==========*/
+.container{
+	font-family: 'Roboto', sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.light{
+	color: #121212;
+	background-color: #fefefe;
+}
+.dark{
+	color: #fefefe;
+	background-color: #1d1d1d;
+}
+.main{
+	padding-top: 3.8rem;
+}
+/*==========HEADER==========*/
+header{
+	position: fixed;
+	width: 100%;
+}
+.nav-logo{
+display: flex;
+align-items: center;
+}
+.logo{
+	font-size: 3rem;
+	padding: 0 1rem;
+}
+nav ul {
+	display: flex;
+	
+}
+.nav-item{
+	text-transform: uppercase;
+	padding: 1rem;
+	padding-left: 0;
+}
+.nav-item:last-child{
+	padding-right: 0;
+}
+.nav-item a{
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #505050;
+}
+.nav-item a:hover{
+	color: #121212;
+	text-decoration: underline;
+}
+
+
