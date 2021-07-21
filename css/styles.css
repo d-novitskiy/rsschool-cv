@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 html{
+	scroll-behavior: smooth;
 	font-size: 16px;
 }
 a{
@@ -34,13 +35,33 @@ li{
 	color: #fefefe;
 	background-color: #1d1d1d;
 }
+.body{
+	background-color: #1d1d1d;
+}
 .main{
-	padding-top: 3.8rem;
+	padding-top: 3.8125rem;
+}
+h1, h2 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 3rem;
+}
+h2{
+	text-transform: uppercase;
+	margin: 3.8125rem 0;
+}
+.anchor{
+	border-top: 3.8125rem solid transparent;
+	margin-top: -3.8125rem;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
 }
 /*==========HEADER==========*/
 header{
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 }
 .nav-logo{
 display: flex;
@@ -65,15 +86,17 @@ nav ul {
 	font-size: 1.5rem;
 	font-weight: 700;
 	color: #898888;
+	border-bottom: 2px solid #fff;
+	transition: color 0.3s linear, border 0.3s linear; 
 }
 .nav-item a:hover{
 	color: #121212;
-	text-decoration: underline;
+	border-bottom: 2px solid #121212;
 }
 
 /*==========INTRODUCTION==========*/
 .introduction{
-	height: calc(100vh - 3.8rem);
+	height: 100vh;
 }
 .aim{
 	display: flex;
@@ -82,19 +105,17 @@ nav ul {
 }
 .avatar{
 	display: flex;
-	height: calc(100vh - 3.8rem);
+	height: calc(100vh - 3.8125rem);
 	align-items: flex-end;
 }
-.aim-description h1, .aim-description h2 {
-	font-weight: 400;
-	text-align: center;
-}
+
 .aim-description h1{
 	font-size: 3rem;
 	margin-bottom: 0.5rem;
 }
 .aim-description h2{
 	font-size: 1.5rem;
+	margin-top: 0;
 	color: #898888;
 	text-transform: uppercase;
 	margin-bottom: 3.75rem;
@@ -141,4 +162,134 @@ ion-icon[name=logo-linkedin]:hover{
 }
 ion-icon[name=mail-outline]:hover{
 	background-color: #1a8dcd;
+}
+
+/*==========EDUCATION==========*/
+.education .container{
+	flex-direction: column;
+}
+.education h2{
+	font-weight: 400;
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 0;
+	margin-left: -110px;
+}
+.timeline {
+	position: relative;
+	margin: 0 auto;
+}
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: #fefefe;
+	top: -46px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+.timeline-item {
+	padding: 10px 20px;
+	position: relative;
+	width: 70%;
+}
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: -17px;
+	background-color: #1d1d1d;
+	border: 4px solid #fefefe;
+	top: 50%;
+	margin-top: -12px;
+	border-radius: 50%;
+	z-index: 1;
+}
+.left {
+	left: -20.1%;
+}
+.right {
+	left: 50%;
+}
+.right::after {
+	left: -16px;
+}
+.content {
+	padding: 20px 30px;
+	position: relative;
+}
+.content p.year{
+	font-size: 3rem;
+	line-height: 3.5rem;
+}
+.left .year{
+	text-align: right;
+}
+.content p{
+	font-size: 1rem;
+	line-height: 1.375rem;
+}
+@media screen and (max-width: 780px) {
+.timeline::after {
+	left: 31px;
+	top: -58px;
+}
+.timeline-item {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 25px;
+}
+.left::after, .right::after {
+	left: 15px;
+}
+.left{
+	left: 0%;
+}
+.right {
+	left: 0%;
+}
+.left .content h2{
+	text-align: left;
+}
+}
+
+/*==========WORK EXPERIENCE==========*/
+.work-experience .container{
+	flex-direction: column;
+}
+.work p{
+font-size: 1.5rem;
+line-height: 2.5rem;
+}
+.work p:last-child{
+	margin-bottom: 2rem;
+}
+
+/*==========SKILLS==========*/
+.skills {
+  clip-path: polygon(0 5vw, 100% 0, 100% calc(100% - 5vw), 0 100%);
+}
+.skills .container{
+	flex-direction: column;
+	justify-content: center;
+}
+.skills h2{
+	margin-top: 8rem;
+}
+.skills-inner{
+	margin-bottom: 8rem;
+}
+.skill{
+	margin: 2rem;
+	transform: scale(1);
+	transition: transform 0.2s linear;
+}
+.skill:hover{
+	transform: scale(0.9);
+}
+.skills-inner-row{
+	display: flex;
+	justify-content: center;
 }
