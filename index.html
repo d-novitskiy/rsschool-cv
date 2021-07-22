@@ -19,7 +19,7 @@
 				<div class="nav-logo dark">
 					<span class="logo">ND</span>
 				</div>
-				<nav>
+				<nav class="desktop-menu">
 					<ul>
 						<li class="nav-item"><a href="#home">Home</a></li>
 						<li class="nav-item"><a href="#education">Education</a></li>
@@ -29,6 +29,23 @@
 						<li class="nav-item"><a href="#skills">Skills</a></li>
 						<li class="nav-item"><a href="#projects">Projects</a></li>
 					</ul>
+				</nav>
+				<nav class="mobile-menu">
+					<input type="checkbox" id="checkbox" class="burger-checkbox" />
+					<label for="checkbox" class="burger-btn"
+						><div class="burger-icon"></div
+					></label>
+					<div class="mobile-menu-inner">
+						<ul>
+							<li class="nav-item"><a href="#home">Home</a></li>
+							<li class="nav-item"><a href="#education">Education</a></li>
+							<li class="nav-item">
+								<a href="#work_experience">Work experience</a>
+							</li>
+							<li class="nav-item"><a href="#skills">Skills</a></li>
+							<li class="nav-item"><a href="#projects">Projects</a></li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -153,6 +170,108 @@
 							<img src="images/react.png" alt="react" class="skill" />
 							<img src="images/redux.png" alt="redux" class="skill" />
 							<img src="images/jQuery.png" alt="jQuery" class="skill" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projects" class="projects light">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="projects-inner">
+						<div class="project">
+							<input
+								type="checkbox"
+								id="project-1"
+								class="description-checkbox"
+							/>
+							<label
+								for="project-1"
+								class="description-checkbox-label"
+								></label
+							>
+							<div class="project-description">
+								<p class="project-name">
+									<a
+										href="https://d-novitskiy.github.io/movies/"
+										target="_blank"
+										>netflixroulette</a
+									>
+								</p>
+								<p>
+									<span>Source code:</span>
+									<a
+										href="https://github.com/d-novitskiy/netflixroulette"
+										target="_blank"
+										>github</a
+									>
+								</p>
+								<p>
+									<span>Description:</span> Made with React, React-Redux Movies
+									app where you can search for a movie, and read its
+									description. Description opens in a modal window which
+									contains its own route number.<br />
+									User can choose how much movies will be shown on a single page
+									and can sort movies by release date or rating. There are two
+									types of searching: by title and by genres. <br />Main
+									difficuilties was connected with pagination.
+								</p>
+								<ul>
+									<span>Features:</span>
+									<li class="project-features">
+										2 types of searching (by title and by genres)
+									</li>
+									<li class="project-features">pagination</li>
+									<li class="project-features">sorting</li>
+									<li class="project-features">routing</li>
+								</ul>
+							</div>
+						</div>
+						<div class="project">
+							<input
+								type="checkbox"
+								id="project-2"
+								class="description-checkbox"
+							/>
+							<label
+								for="project-2"
+								class="description-checkbox-label"
+								></label
+							>
+							<div class="project-description">
+								<p class="project-name">
+									<a
+										href="https://d-novitskiy.github.io/dobrodedovo/"
+										target="_blank"
+										>Dobrodedovo</a
+									>
+								</p>
+								<p>
+									<span>Source code:</span>
+									<a
+										href="https://github.com/d-novitskiy/dobrodedovo"
+										target="_blank"
+										>github</a
+									>
+								</p>
+								<p>
+									<span>Description:</span> Made with Bootstrap 4 Landing page
+									for the product store Dobrodedovo in Stepyanka Minsk where you
+									can find information about product range, read about
+									department of good deeds and find contact information. (In
+									development).<br />
+									There is a plan to rewrite the section with the store's
+									departments, add animation, launch a landing page on hosting
+									on one of the cms with the addition of a section with articles
+									and a feedback form.
+								</p>
+								<ul>
+									<span>Features:</span>
+									<li class="project-features">responsive design</li>
+									<li class="project-features">thumbnail images</li>
+									<li class="project-features">section with articles(plan)</li>
+									<li class="project-features">feedback form(plan)</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
