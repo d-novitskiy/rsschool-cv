@@ -477,7 +477,10 @@ font-size: 1.5rem;
 .description-checkbox:checked ~ .project-description{
 	transform: translate(0);
 }
-
+.copyright{
+	text-align: center;
+	padding: 2rem 0;
+}
 /*==========MEDIA==========*/
 @media screen and (max-width: 320px) {
 	html{
